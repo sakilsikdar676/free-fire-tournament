@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament Slot Booking</title>
+    <link rel="stylesheet" href="../leader-bord/css/style.css">
+</head>
+<body>
+
+    <h2>Tournament Slot Booking (12 Slots)</h2>
+    <p>Please select an available slot to register your team.</p>
+
+    <div class="slot-grid" id="slot-container">
+        </div>
+
+    <div id="booking-modal">
+        <h3>Book <span id="slot-name-display"></span></h3>
+        <input type="text" id="userName" placeholder="Team/Player Name" required>
+        <input type="text" id="userPhone" placeholder="Phone Number" required>
+        <button class="btn-confirm" onclick="submitBooking()">Confirm Registration</button><br>
+        <button class="btn-close" onclick="closeModal()">Close</button>
+    </div>
+
+    <script>
+        // Google Apps Script theke pawa Web App URL ekhane boshao
+        const scriptURL = 'TOMAR_GOOGLE_SCRIPT_URL_EKHANE_DAW';
+        let selectedSlot = null;
+
+        // 1. 12-ta slot load kora
+        async function loadSlots() {
+            const container = document.getElementById('slot-container');
+            container.innerHTML = "Loading slots...";
+
+            try {
+                const response = await fetch(scriptURL);
+                const bookedSlots = await response.json(); // Sheet theke booked slot-er list ashbe
+
+                container.innerHTML = ""; // Clear loader
+
+                for (let i = 1; i <= 12; i++) {
+                    const slotName = "Slot " + i;
+                    const isBooked = bookedSlots.includes(slotName);
+                    
+                    const btn = document.createElement('button');
+                    btn.innerText = slotName;
+                    btn.className = slot ${isBooked ? 'booked' : 'available'};
+                    
+                    if (!isBooked) {
+                        btn.onclick = () => openModal(slotName);
+                    } else {
+                        btn.disabled = true;
+                        btn.innerText += " (Full)";
+                    }
+                    
+                    container.appendChild(btn);
+                }
+            } catch (error) {
+                container.innerHTML = "Error loading slots. Make sure your Script URL is correct.";
+            }
+        }
+
+        function openModal(slot) {
+            selectedSlot = slot;
+            document.getElementById('slot-name-display').innerText = slot;
+            document.getElementById('booking-modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('booking-modal').style.display = 'none';
+        }
+
+        // 2. Data Google Sheet-e pathano
+        function submitBooking() {
+            const name = document.getElementById('userName').value;
+            const phone = document.getElementById('userPhone').value;
+
+            if(!name || !phone) return alert("All fields are required!");
+
+            const data = { name, phone, slot: selectedSlot };
+
+            fetch(scriptURL, {
+                method: 'POST',
+                mode: 'no-cors', // Google Script-er jonno eta lagte pare
+                cache: 'no-cache',
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                alert("Success! " + selectedSlot + " has been booked.");
+                location.reload();
+            })
+            .catch(err => alert("Error: " + err));
+        }
+
+        loadSlots(); // Page load holei slot check korbe
+    </script>
+</body>
+</html>

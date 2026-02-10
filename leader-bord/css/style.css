@@ -1,0 +1,46 @@
+
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; }
+        h2 { color: #333; }
+        
+        /* 12-ta slot-er Grid Layout */
+        .slot-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Protiti row-te 4-ti slot */
+            gap: 15px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .slot {
+            padding: 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .available { background-color: #2ecc71; } /* Green */
+        .available:hover { background-color: #27ae60; transform: scale(1.05); }
+
+        .booked { background-color: #e74c3c; cursor: not-allowed; opacity: 0.7; } /* Red */
+
+        /* Booking Form Modal */
+        #booking-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            z-index: 100;
+        }
+
+        input { display: block; width: 100%; margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .btn-confirm { background: #3498db; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; }
+        .btn-close { background: #95a5a6; color: white; border: none; padding: 5px 10px; margin-top: 10px; cursor: pointer; }
