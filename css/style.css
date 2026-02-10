@@ -1,0 +1,583 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    background-color: #1A0B2E;
+    max-width: 400px;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 180px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    font-weight: 600;
+    padding: 10px 10px 11px 10px;
+    border: none;
+    outline: none;
+    border-radius: 1000px;
+    color: #ffff;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+    cursor: pointer;
+    margin-right: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.logo h1 {
+    color: #ffff;
+    font-size: 35px;
+}
+
+.gradient-text{
+    color: transparent;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+}
+
+.banner{
+    background-image: url(../images/sub-banner.jpg);
+    height: 237px;
+    /* background: 100% 100%; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.banner h1{
+    color: #ffff;
+    width: 190px; 
+    /* height: 100px; */
+    font-size: 29px;
+    /* border: 1px solid red; */
+    padding-top :60px;
+    padding-bottom: 70px;
+    padding-left: 5px;
+    /* background-color: #0a070e86; */
+    text-transform: uppercase;
+    margin-left:178px ;
+}
+
+.banner h1 span{
+    font-size: 35px;
+     color: transparent;
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050811;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap');
+
+.tournament-section {
+    background-color: #050811;
+    padding: 80px 20px;
+    font-family: 'Rajdhani', sans-serif; /* Gaming font */
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px #f43f5e;
+}
+
+.tournament-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 2px solid #334155;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.status {
+    background: #f43f5e;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.game-name {
+    font-size: 2.2rem;
+    margin: 15px 0 30px 0;
+    color: #38bdf8;
+}
+
+.tournament-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 200px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-box p {
+    margin: 0;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.info-box h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.glow-text {
+    color: #fbbf24; /* Gold color */
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+}
+
+.label {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.tournament-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    color: #cbd5e1;
+}
+
+.join-btn {
+    background: linear-gradient(90deg, #f43f5e, #fb7185);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
+}
+
+.join-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(244, 63, 94, 0.7);
+}
+
+
+
+
+
+
+
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+.rules-section {
+    background-color: #0f172a; /* Dark Gaming Background */
+    color: #ffffff;
+    padding: 60px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rules-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rules-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #38bdf8; /* Cyan Blue Color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.rule-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rule-card:hover {
+    transform: translateY(-10px);
+    background: rgba(56, 189, 248, 0.1);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 30px rgba(56, 189, 248, 0.2);
+}
+
+.rule-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(56, 189, 248, 0.2);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.rule-card h3 {
+    margin-top: 0;
+    color: #38bdf8;
+    font-size: 1.5rem;
+}
+
+.rule-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+
+
+
+
+
+
+/* commented  */
+
+body {
+    background-color: #0f1218;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Leaderboard Style */
+.leaderboard-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.points-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1e26;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.points-table th {
+    background: #ff4d00; /* Free Fire Orange Theme */
+    padding: 15px;
+}
+
+.points-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #2d343f;
+}
+
+.top-rank {
+    background: rgba(255, 215, 0, 0.1); /* Gold Highlight */
+    font-weight: bold;
+}
+
+/* MVP Card Style */
+.hall-of-fame {
+    text-align: center;
+    padding: 40px;
+}
+
+.mvp-card {
+    background: linear-gradient(145deg, #232931, #393e46);
+    border: 2px solid #ff4d00;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(255, 77, 0, 0.4);
+}
+
+.mvp-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-bottom: 15px;
+}
+
+.mvp-title {
+    font-size: 1.2rem;
+    color: #ff4d00;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+  :root {
+            --bkash-color: #e2136e;
+        }
+        
+        .payment-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .bkash-logo {
+            width: 120px;
+            margin-bottom: 15px;
+        }
+        .instruction {
+            background: #fff0f5;
+            padding: 10px;
+            border-left: 5px solid var(--bkash-color);
+            text-align: left;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .payment-details {
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: var(--bkash-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #b80d5a;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        :root {
+    --nagad-color: #f7941d; /* Nagad Orange */
+    --nagad-dark: #e07b00;
+}
+
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+} */
+
+.nagad-theme{
+    margin-top: 50px;
+}
+
+.payment-card {
+    background: #ffffff;
+    
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+.payment-logo {
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    background: #fff8f0;
+    padding: 15px;
+    border-left: 5px solid var(--nagad-color);
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.payment-details {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px dashed var(--nagad-color);
+    border-radius: 8px;
+}
+
+.payment-details .number {
+    color: var(--nagad-color);
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: var(--nagad-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(247, 148, 29, 0.3);
+}
+
+.nagad-btn {
+    background-color: var(--nagad-color);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.nagad-btn:hover {
+    background-color: var(--nagad-dark);
+}
+
+
+
