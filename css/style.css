@@ -581,3 +581,14 @@ input[type="text"]:focus {
 
 
 
+
+
+.payment-card, .nagad-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Lato', sans-serif;
+}

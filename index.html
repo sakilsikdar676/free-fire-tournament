@@ -147,18 +147,23 @@
     <img src="https://www.logo.wine/a/logo/BKash/BKash-Logo.wine.svg" alt="bKash" class="bkash-logo">
     
     <h3>Tournament Registration</h3>
-    <form action="https://formsubmit.co/masrurali51@gmail.com" method="POST" enctype="multipart/form-data"></form>
-    <div class="instruction">
-        <strong>Niyom:</strong> <br>
-        1. Prothome niche deya number-e 'Send Money' korun. <br>
-        2. Tarpor Transaction ID ebong Screenshot joma din.
-    </div>
+    
+    <form action="https://formsubmit.co/masrurali51@gmail.com" method="POST" enctype="multipart/form-data">
+        
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New bKash Payment From Tournament Site">
 
-    <div class="payment-details">
-        bKash (Personal): <span style="color: var(--bkash-color);">017XXXXXXXX</span>
-    </div>
+        <div class="instruction">
+            <strong>Niyom:</strong> <br>
+            1. Prothome niche deya number-e 'Send Money' korun. <br>
+            2. Tarpor Transaction ID ebong Screenshot joma din.
+        </div>
 
-    <form action="/your-backend-handler" method="POST" enctype="multipart/form-data">
+        <div class="payment-details">
+            bKash (Personal): <span style="color: #e2136e;">017XXXXXXXX</span>
+        </div>
+
         <div class="input-group">
             <label>Transaction ID</label>
             <input type="text" name="trx_id" placeholder="Ex: 8N77XPS9" required>
@@ -169,40 +174,53 @@
             <input type="file" name="screenshot" accept="image/*" required>
         </div>
 
-        <button type="submit">Submit Payment</button>
+        <button type="submit" style="background-color: #e2136e; color: white; padding: 12px; border: none; width: 100%; cursor: pointer; border-radius: 5px;">
+            Submit Payment
+        </button>
     </form>
 </div>
 
 
-
-<div class="payment-card nagad-theme">
-   <img src="https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png" alt="Nagad" class="payment-logo">
+<div class="nagad-card">
+    <img src="https://download.logo.wine/logo/Nagad/Nagad-Logo.wine.png" alt="Nagad" class="nagad-logo" style="width: 140px; margin-bottom: 20px;">
     
-    <h3>Tournament Registration</h3>
-   <form action="https://formsubmit.co/masrurali51@gmail.com" method="POST" enctype="multipart/form-data"></form> 
-    <div class="instruction">
-        <strong>Nagad Payment Step:</strong> <br>
-        1. Nicher number-e <b>Send Money</b> korun. <br>
-         2. Transaction ID ebong Screenshot nichen form-e joma din.
-    </div>
-
-    <div class="payment-details">
-        Nagad (Personal): <span class="number">018XXXXXXXX</span>
-    </div>
-
-    <form action="/submit-nagad-payment" method="POST" enctype="multipart/form-data">
+    <h3>Tournament Registration (Nagad)</h3>
+    
+    <form action="https://formsubmit.co/masrurali51@gmail.com" method="POST" enctype="multipart/form-data">
         
-        <div class="input-group">
-            <label>Transaction ID</label>
-            <input type="text" name="trx_id" placeholder="Ex: 7G88XPT2" required>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Nagad Payment From Tournament Site">
+
+        <div class="instruction" style="background: #fff8f0; padding: 15px; border-left: 5px solid #f7941d; text-align: left; margin-bottom: 20px;">
+            <strong>Nagad Payment Step:</strong> <br>
+            1. Nicher number-e <b>Send Money</b> korun. <br>
+            2. Amount: <b>200 BDT</b> <br>
+            3. Transaction ID ebong Screenshot niche joma din.
         </div>
 
-        <div class="input-group">
-            <label>Upload Payment Screenshot</label>
-            <input type="file" name="screenshot" accept="image/*" required>
+        <div class="payment-details" style="font-weight: bold; margin-bottom: 20px; padding: 10px; border: 2px dashed #f7941d; border-radius: 8px; text-align: center;">
+            Nagad (Personal): <span style="color: #f7941d;">018XXXXXXXX</span>
         </div>
 
-        <button type="submit" class="nagad-btn">Submit Payment</button>
+        <div class="input-group" style="text-align: left; margin-bottom: 15px;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px;">Nagad Number (Sender)</label>
+            <input type="text" name="Sender_Number" placeholder="01XXXXXXXXX" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+        </div>
+
+        <div class="input-group" style="text-align: left; margin-bottom: 15px;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px;">Transaction ID</label>
+            <input type="text" name="Trx_ID" placeholder="Ex: 7G88XPT2" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+        </div>
+
+        <div class="input-group" style="text-align: left; margin-bottom: 15px;">
+            <label style="display: block; font-weight: bold; margin-bottom: 5px;">Upload Screenshot</label>
+            <input type="file" name="Screenshot" accept="image/*" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box;">
+        </div>
+
+        <button type="submit" class="nagad-btn" style="background-color: #f7941d; color: white; border: none; padding: 15px; width: 100%; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer;">
+            Verify Nagad Payment
+        </button>
     </form>
 </div>
 
